@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans+Condensed&family=Bangers&family=Cookie&family=Lilita+One&family=Arima+Madura&family=Aclonica&family=Mr+Dafoe&family=Kavivanar&family=Shadows+Into+Light+Two&family=Marck+Script&family=Archivo+Black&family=Italianno&family=Pinyon+Script&family=Ultra&family=Nothing+You+Could+Do&family=Damion&family=Unica+One&family=Gruppo&family=Russo+One&family=Black+Ops+One&display=swap');
+
+:root {
+  font-size: 14px;
+}
+
+body {
+/*background-color: rgb(216, 216, 216);*/
+  line-height: 1.5;
+  /*margin: 10px auto;*/
+  max-width: 1200px;
+}
+
+.container{
+    margin: 0 auto;
+    box-sizing: border-box;
+    /*padding: 0.5in;*/
+    width: 8.5in;
+    height: 11in;
+    /*background-color: white;*/
+    box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+    font-family: "Source Serif Pro", "Cambria", "Charter", "Georgia", sans-serif;
+    color: hsl(0, 0%, 20%);
+    /*min-height: 300px;
+    width: 100%;*/
+    background: #444;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "left right";
+}
+
+.left-column{
+    /*padding: 0.25in;*/
+    background: #444;
+    color: #eee;
+    grid-area: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 200px auto auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "name"
+    "personal-info"
+    "skills"
+    "hobbies";
+}
+
+.name {
+  padding: 10px;
+  grid-area: name;
+  font-size: 15px;
+  font-family: 'Archivo Black', Tahoma, sans-serif;
+  /*font-weight: bolder;*/
+  text-align: center;
+}
+
+.personal-info{
+  grid-area: personal-info;
+}
+
+.personal-info div {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 10px 0px 15px;
+}
+
+.personal-info .fa{
+  font-size: 15px;
+  color: #2177e7;
+  margin: 5px;
+}
+
+.personal-info p {
+  line-height: 18px;
+  font-size: 11px;
+  margin-top: 2px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: justify;
+  font-family: Gruppo, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.personal-info a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.heading {
+  padding: 5px 0px 0px 20px;
+  width: 100%;
+  height:30px;
+  background-color: #333;
+  font-family: 'Archivo Black', Tahoma, sans-serif;
+  /*font-weight: bold;
+  font-size: 16px;*/
+}
+
+.skills{
+  grid-area: skills;
+	width: 200px;
+	margin: 5px 20px;
+}
+.skills li{
+	margin: 5px 0;
+  list-style: none;
+}
+.skills h5{
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Gruppo, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 5px auto;
+}
+.bar{
+	background: #353b48;
+	display: block;
+	height: 2px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #7e7f81b3;
+}
+.bar span {
+	height: 2px;
+	float: left;
+	background: #2177e7;
+}
+.html{
+	width: 85%;
+}
+.css{
+  width: 70%;
+}
+.js{
+  width:50%;
+}
+.python{
+  width: 70%;
+}
+.ms{
+  width: 75%;
+}
+
+.data-analysis {
+  width: 65%;
+}
+
+
+.source-code {
+  position: relative;
+}
+
+.source-code a {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #eee;
+  font-size: 22px;
+  height: 20px;
+  width: 40px;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.right-column{
+    /*padding: 0.25in;*/
+    background: #dedede;
+    width: 100%;
+    grid-area: right;
+    display: grid;
+    grid-row-gap: 2px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 130px auto auto 160px;
+    grid-template-areas: 
+    "badges"
+    "profile"
+    "experience"
+    "education"
+    "references";
+}
+
+.badges, .badges-div {
+  margin-top: 0px;
+}
+
+.rt{
+  width: 100%;
+  background: #fff;
+}
+
+.right-headers{
+  padding: 2px 0px 0px 20px;
+  margin: 0px 0px;
+  width: auto;
+  font-family: 'Archivo Black', Tahoma, sans-serif;
+ /* background: #333;*/
+  color: #222;
+}
+
+.right-headers span{
+  font-weight: normal;
+  font-family: 'Nothing You Could Do', sans-serif;
+}
+
+.badge-div {
+  grid-area: badges;
+  display: flex;
+  justify-content: center;
+}
+.badge-div img{
+  margin: 0px;
+  width: 100px;
+  padding: 20px 10px 10px 20px;
+}
+
+.underline{
+  background: #353b48;
+	display: block;
+	height: 2px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #7e7f81b3;
+  margin: 0px;
+  margin-left: 20px;
+}
+
+.profile-ul{
+  width: 75px;
+}
+
+.exp-ul{
+  width: 262px;
+}
+
+.edu-ul{
+  width: 106px;
+}
+
+.ref-ul {
+  width: 119px;
+}
+
+.profile-div {
+  grid-area: profile;
+}
+
+.profile-div p {
+  text-align: justify;
+  margin: 10px 15px 10px 20px;
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.education {
+  grid-area: education;
+}
+
+.right-div{
+  grid-area: experience;
+  margin: 0px 10px 10px 20px;
+  padding: 0px;
+}
+
+.desc dt, .desc li {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.title-course {
+  flex-basis: 25%;
+}
+
+.org-sch {
+  flex-basis: 60%;
+}
+
+.duration {
+  flex-basis: 15%;
+}
+
+.desc dt p {
+  margin: 0px 10px 0px 0px;
+}
+
+dd {
+  display: flex;
+  margin: 5px 5px 10px 15px;
+}
+
+.pointer {
+  flex-basis: 20%;
+}
+
+.role-desc {
+  flex-basis: 80%;
+}
+
+.desc dt {
+  margin: auto auto 10px auto;
+}
+
+.references {
+  grid-area: references;
+}
+
+.ref-name {
+  flex-basis: 40%;
+}
+
+.ref-desig {
+  flex-basis: 60%;
+}
+
+.ref-desig span {
+  font-style: italic;
+}
+
+@media print {
+  html {
+    height: 11in;
+    width: 8.5in;
+    overflow: hidden;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  main {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  .download-link {
+    display: none;
+  }
+}
