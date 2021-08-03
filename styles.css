@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Archivo+Black&family=Gruppo&display=swap');
+
+:root {
+  font-size: 14px;
+}
+
+body {
+  line-height: 1.5;
+  max-width: 1200px;
+}
+
+.container{
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 8.5in;
+    height: 11in;
+    box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+    font-family: Tahoma, "Source Serif Pro", "Cambria", "Charter", "Georgia", sans-serif;
+    color: #333;
+    background: #353b48;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "left right";
+}
+
+.left-column{
+    background: #eee;
+    grid-area: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px auto auto auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "name"
+    "personal-info"
+    "skills"
+    "hobbies";
+}
+
+.name {
+  padding: 10px;
+  grid-area: name;
+  font-size: 20px;
+  font-family: 'Kaushan Script', Tahoma, sans-serif;
+  text-align: center;
+}
+
+.info {
+  margin: 15px 5px 10px 15px;
+}
+
+.info li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 8px;
+}
+
+.info li .fa {
+  font-size: 15px;
+  color: #353b48;
+  margin: 5px;
+}
+
+.info li p{
+  margin: 0px 0px auto 0px;
+  text-align: initial;
+}
+
+.personal-info{
+  grid-area: personal-info;
+}
+.info-container div {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5px 0px 15px;
+}
+
+.info-container .fa{
+  font-size: 15px;
+  color: #353b48;
+  margin: 5px;
+}
+
+.info-container p {
+  margin: 2px auto 7px 0px;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: initial;
+}
+
+.heading {
+  margin: 0px;
+  padding: 5px 0px 0px 20px;
+  font-size: 18px;
+}
+
+.skills{
+  grid-area: skills;
+	width: 200px;
+	margin: 15px 20px;
+}
+
+.skills li{
+	margin: 5px 0;
+  list-style: none;
+}
+
+.skills h5, .hobbies li{
+  font-size: 15px;
+  font-weight: normal;
+  margin: 5px auto;
+}
+.bar{
+	display: block;
+	height: 2px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+}
+.bar span {
+	height: 2px;
+	float: left;
+	background: #353b48;
+}
+.html{
+	width: 85%;
+}
+.css{
+  width: 70%;
+}
+.js{
+  width:55%;
+}
+.python{
+  width: 70%;
+}
+.ms{
+  width: 75%;
+}
+
+.data-analysis {
+  width: 70%;
+}
+
+.time {
+  width: 85%;
+}
+
+.comm {
+  width: 87%;
+}
+
+.analytic {
+  width: 88%;
+}
+
+.solution {
+  width: 85%;
+}
+
+.computer {
+  width: 93%;
+}
+
+.source-code {
+  position: relative;
+}
+
+.source-code a {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #333;
+  font-size: 22px;
+  height: 20px;
+  width: 40px;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.right-column{
+    font-family: Tahoma ,sans-serif;
+    width: 100%;
+    grid-area: right;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 140px 130px auto auto 160px;
+    grid-template-areas: 
+    "badges"
+    "profile"
+    "experience"
+    "education"
+    "references";
+}
+
+.badges, .badges-div {
+  margin-top: 0px;
+}
+
+.rt{
+  width: 100%;
+  background: #fff;
+}
+
+.right-headers{
+  padding: 2px 0px 0px 20px;
+  margin: 0px 0px;
+  width: auto;
+  color: #222;
+}
+
+.badge-div {
+  grid-area: badges;
+  display: flex;
+  justify-content: center;
+}
+.badge-div img{
+  margin: 0px;
+  width: 100px;
+  padding: 20px 10px 10px 20px;
+}
+
+.underline{
+  background: #353b48;
+	display: block;
+	height: 2px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #7e7f81b3;
+  margin: 0px;
+  margin-left: 20px;
+}
+
+.profile-ul{
+  width: 70px;
+}
+
+.hobbies-ul{
+  width: 81px;
+}
+
+.skills-ul{
+  width: 63px;
+}
+
+.contact-ul{
+  width: 139px;
+}
+
+.exp-ul{
+  width: 238px;
+}
+
+.edu-ul{
+  width: 97px;
+}
+
+.ref-ul {
+  width: 105px;
+}
+
+.profile-div {
+  grid-area: profile;
+}
+
+.profile-div p {
+  text-align: justify;
+  margin: 10px 15px 10px 20px;
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.education {
+  grid-area: education;
+}
+
+.right-div{
+  margin: 0px 10px 10px 20px;
+  padding: 0px;
+}
+
+.ref-desc dt, .desc dt, .desc li {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.title-course {
+  flex-basis: 25%;
+  font-family: Tahoma;
+  font-weight: bold;
+}
+
+.org-sch {
+  flex-basis: 60%;
+}
+
+.duration {
+  flex-basis: 15%;
+  font-style: italic;
+}
+
+.ref-desc dt p, .desc dt p {
+  margin: 0px 10px 0px 0px;
+}
+
+dd {
+  display: flex;
+  margin: 0px 0px 15px 15px;
+}
+
+.pointer {
+  flex-basis: 20%;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.role-desc {
+  flex-basis: 80%;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.desc dt {
+  margin: 0px auto 2px auto;
+}
+
+.ref-desc dt {
+  margin: 7px auto 2px auto;
+}
+
+.references {
+  grid-area: references;
+}
+
+.ref-name {
+  flex-basis: 39%;
+  font-weight: bold;
+}
+
+.ref-desig {
+  flex-basis: 61%;
+}
+
+.ref-desig span {
+  font-style: italic;
+}
+
+@media print {
+  html {
+    height: 11in;
+    width: 8.5in;
+    overflow: hidden;
+  }
+
+  body {
+    margin: 0;
+  }
+}
